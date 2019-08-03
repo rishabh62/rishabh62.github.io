@@ -14,7 +14,6 @@
 			"version": "1.40.12"
 		}
 	},
-
 	"sap.ui": {
 		"technology": "UI5",
 		"icons": {
@@ -30,13 +29,8 @@
 			"tablet": true,
 			"phone": true
 		},
-		"supportedThemes": [
-			"sap_hcb",
-			"sap_belize"
-
-		]
+		"supportedThemes": ["sap_hcb", "sap_belize"]
 	},
-
 	"sap.ui5": {
 		"rootView": {
 			"viewName": "ui5.resume.view.Resume",
@@ -56,7 +50,7 @@
 		},
 		"contentDensities": {
 			"compact": true,
-			"cozy": true
+			"cozy": false
 		},
 		"models": {
 			"i18n": {
