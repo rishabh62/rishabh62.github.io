@@ -10,14 +10,14 @@
 							<ObjectPageDynamicHeaderTitle>
 								<expandedHeading>
 									<m:FlexBox wrap="Wrap" fitContainer="true" alignItems="Center">
-										<m:Title text="Denise Smith" wrapping="true" class="sapUiTinyMarginEnd sapUiTinyMarginTop"/>
+										<m:Title text="Rishabh Gour" wrapping="true" class="sapUiTinyMarginEnd sapUiTinyMarginTop"/>
 									</m:FlexBox>
 								</expandedHeading>
 								<snappedHeading>
 									<m:FlexBox wrap="Wrap" fitContainer="true" alignItems="Center">
 										<m:FlexBox wrap="NoWrap" fitContainer="true" alignItems="Center" class="sapUiTinyMarginEnd">
-											<f:Avatar src="./test-resources/sap/uxap/images/imageID_275314.png" displaySize="S" class="sapUiTinyMarginEnd"/>
-											<m:Title text="Denise Smith" wrapping="true" class="sapUiTinyMarginEnd"/>
+											<f:Avatar src="resources/rishabh.jpg" displaySize="S" class="sapUiTinyMarginEnd"/>
+											<m:Title text="Rishabh Gour" wrapping="true" class="sapUiTinyMarginEnd"/>
 										</m:FlexBox>
 										<m:FlexBox wrap="NoWrap" fitContainer="true" alignItems="Center" class="sapUiTinyMarginEnd">
 											<m:ObjectMarker type="Favorite" class="sapUiTinyMarginEnd"/>
@@ -28,10 +28,10 @@
 									</m:FlexBox>
 								</snappedHeading>
 								<expandedContent>
-									<m:Text text="Senior Developer"/>
+									<m:Text text="Developer"/>
 								</expandedContent>
 								<snappedContent>
-									<m:Text text="Senior Developer"/>
+									<m:Text text="Developer"/>
 								</snappedContent>
 								<snappedTitleOnMobile>
 									<m:Title text="Header Title On Phone"/>
@@ -50,13 +50,13 @@
 						</headerTitle>
 						<headerContent>
 							<m:FlexBox wrap="Wrap" fitContainer="true" alignItems="Stretch">
-								<f:Avatar class="sapUiSmallMarginEnd sapUiSmallMarginTop" src="./test-resources/sap/uxap/images/imageID_275314.png" displaySize="L"></f:Avatar>
+								<f:Avatar class="sapUiSmallMarginEnd sapUiSmallMarginTop" src="resources/rishabh.jpg" displaySize="L"></f:Avatar>
 								<l:VerticalLayout class="sapUiSmallMarginEnd sapUiSmallMarginTop">
-									<m:Link text="+33 6 4512 5158"/>
-									<m:Link text="DeniseSmith@sap.com"/>
+									<m:Link text="+91 7773025552"/>
+									<m:Link text="rishabhgour62@gmail.com"/>
 								</l:VerticalLayout>
 								<l:VerticalLayout class="sapUiSmallMarginEnd sapUiSmallMarginTop">
-									<m:Label text="Hello! I am Denise and I use Object Page"/>
+									<m:Label text="Hello! I am Rishabh and I use Object Page"/>
 									<m:VBox height="63px">
 										<m:Label text="Achieved goals"/>
 										<m:ProgressIndicator percentValue="30" displayValue="30%" showValue="true" state="None"/>
