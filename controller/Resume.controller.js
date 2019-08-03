@@ -7,11 +7,7 @@ sap.ui.define([
 	return Controller.extend("ui5.resume.controller.Resume", {
 		
 		onInit: function(){
-	//		alert("hi");
-//	debugger;
-			var human = new Human("Rishabh");
-			console.log(human.talk());
-		}
+
 		
 	});
 });
