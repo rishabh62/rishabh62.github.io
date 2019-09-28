@@ -8,7 +8,7 @@
 		<ObjectPageLayout>
 			<headerContent>
 				<m:FlexBox wrap="Wrap" fitContainer="true" alignItems="Stretch" width="100%">
-					<m:HBox width="100%" justifyContent="Start">
+					<m:HBox width="100%" justifyContent="Start" wrap="Wrap">
 						<m:HBox>
 							<f:Avatar class="sapUiSmallMarginEnd sapUiSmallMarginTop" src="/rishabh.jpg" displaySize="XL"></f:Avatar>
 							<l:VerticalLayout class="sapUiSmallMarginEnd sapUiLargeMarginTop">
