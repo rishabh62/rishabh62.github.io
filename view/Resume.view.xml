@@ -1,6 +1,6 @@
 <mvc:View controllerName="ui5.resume.controller.Resume" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
 	displayBlock="true" xmlns="sap.uxap" xmlns:layout="sap.ui.layout" xmlns:m="sap.m" xmlns:f="sap.f" xmlns:l="sap.ui.layout" height="100%"
-	xmlns:core="sap.ui.core">
+	xmlns:core="sap.ui.core" xmlns:timeline="ui5.resume.blocks.timeline">
 	<m:App>
 		<!--<m:pages>-->
 		<!--	<m:Page title="{i18n>title}" class="bigTitle">-->
@@ -21,8 +21,14 @@
 								<core:Icon src="sap-icon://map"></core:Icon>
 								<m:Text class="sapUiTinyMarginBegin" text="Bangalore"/>
 							</m:HBox>
-							<m:Link text="+91 7773025552"/>
-							<m:Link text="rishabhgour62@gmail.com"/>
+							<m:HBox>
+								<core:Icon src="sap-icon://call"></core:Icon>
+								<m:Link class="sapUiTinyMarginBegin" text="+91 7773025552"/>
+							</m:HBox>
+							<m:HBox>
+								<core:Icon src="sap-icon://email"></core:Icon>
+								<m:Link class="sapUiTinyMarginBegin" text="rishabhgour62@gmail.com"/>
+							</m:HBox>
 						</l:VerticalLayout>
 					</m:HBox>
 				</m:FlexBox>
@@ -31,14 +37,11 @@
 				<ObjectPageSection id="goalsSection" title="Timeline">
 					<subSections>
 						<ObjectPageSubSection title="">
-					<!--		<blocks>-->
-								<!--<goals:GoalsBlock id="goalsblock"/>-->
-					<!--		</blocks>-->
-					<!--<m:Text text="hello"/>-->
+							<blocks>
+								<timeline:Timeline/>
+							</blocks>
 						</ObjectPageSubSection>
-					
 					</subSections>
-					
 				</ObjectPageSection>
 				<!--<ObjectPageSection id="personalSection" title="Personal" importance="Medium">-->
 				<!--	<subSections>-->
