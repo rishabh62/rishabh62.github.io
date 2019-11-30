@@ -1,106 +1,14 @@
 <mvc:View controllerName="ui5.resume.controller.Resume" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
-	displayBlock="true" xmlns="sap.uxap" xmlns:layout="sap.ui.layout" xmlns:m="sap.m" xmlns:f="sap.f" xmlns:l="sap.ui.layout" height="100%"
-	xmlns:core="sap.ui.core" xmlns:timeline="ui5.resume.blocks.timeline">
-	<m:App>
-		<!--<m:pages>-->
-		<!--	<m:Page title="{i18n>title}" class="bigTitle">-->
-		<!--		<m:content>-->
-		<ObjectPageLayout>
-			<headerContent>
-				<m:FlexBox wrap="Wrap" fitContainer="true" alignItems="Stretch" width="100%">
-					<m:HBox width="100%" justifyContent="Start" wrap="Wrap">
-						<m:HBox>
-							<f:Avatar class="sapUiSmallMarginEnd sapUiSmallMarginTop" src="/rishabh.jpg" displaySize="XL"></f:Avatar>
-							<l:VerticalLayout class="sapUiSmallMarginEnd sapUiLargeMarginTop">
-								<m:Title titleStyle="H2" text="Rishabh Gour"/>
-								<m:Title titleStyle="H5" text="SAP Fiori consultant"/>
-							</l:VerticalLayout>
-						</m:HBox>
-						<l:VerticalLayout class="sapUiSmallMarginEnd sapUiLargeMarginTop">
-							<m:HBox>
-								<core:Icon src="sap-icon://map"></core:Icon>
-								<m:Text class="sapUiTinyMarginBegin" text="Bangalore"/>
-							</m:HBox>
-							<m:HBox>
-								<core:Icon src="sap-icon://call"></core:Icon>
-								<m:Link class="sapUiTinyMarginBegin" text="+91 7773025552"/>
-							</m:HBox>
-							<m:HBox>
-								<core:Icon src="sap-icon://email"></core:Icon>
-								<m:Link class="sapUiTinyMarginBegin" text="rishabhgour62@gmail.com"/>
-							</m:HBox>
-						</l:VerticalLayout>
-					</m:HBox>
-				</m:FlexBox>
-			</headerContent>
-			<sections>
-				<ObjectPageSection id="goalsSection" title="Timeline">
-					<subSections>
-						<ObjectPageSubSection title="">
-							<blocks>
-								<timeline:Timeline/>
-							</blocks>
-						</ObjectPageSubSection>
-					</subSections>
-				</ObjectPageSection>
-				<!--<ObjectPageSection id="personalSection" title="Personal" importance="Medium">-->
-				<!--	<subSections>-->
-				<!--		<ObjectPageSubSection id="personalSectionSS1" title="Connect">-->
-				<!--			<blocks>-->
-				<!--				<personal:BlockPhoneNumber id="phone"/>-->
-				<!--				<personal:BlockSocial id="social"/>-->
-				<!--				<personal:BlockAdresses id="adresses"/>-->
-				<!--				<personal:BlockMailing id="mailing" columnLayout="1"/>-->
-				<!--			</blocks>-->
-				<!--		</ObjectPageSubSection>-->
-				<!--		<ObjectPageSubSection id="personalSectionSS2" title="Payment information">-->
-				<!--			<blocks>-->
-				<!--				<personal:PersonalBlockPart1 id="part1" columnLayout="1"/>-->
-				<!--			</blocks>-->
-				<!--			<moreBlocks>-->
-				<!--				<personal:PersonalBlockPart2 id="part2" columnLayout="1"/>-->
-				<!--			</moreBlocks>-->
-				<!--		</ObjectPageSubSection>-->
-				<!--	</subSections>-->
-				<!--</ObjectPageSection>-->
-				<!--<ObjectPageSection id="employmentSection" title="Employment">-->
-				<!--	<subSections>-->
-				<!--		<ObjectPageSubSection id="employmentSectionSS1" title="Job information">-->
-				<!--			<blocks>-->
-				<!--				<employment:BlockJobInfoPart1 id="jobinfopart1"/>-->
-				<!--				<employment:BlockJobInfoPart2 id="jobinfopart2"/>-->
-				<!--				<employment:BlockJobInfoPart3 id="jobinfopart3"/>-->
-				<!--			</blocks>-->
-				<!--		</ObjectPageSubSection>-->
-				<!--		<ObjectPageSubSection id="employmentSectionSS2" title="Employee Details" mode="Collapsed" importance="Medium">-->
-				<!--			<blocks>-->
-				<!--				<employment:BlockEmpDetailPart1 id="empdetailpart1" columnLayout="1"/>-->
-				<!--			</blocks>-->
-				<!--			<moreBlocks>-->
-				<!--				<employment:BlockEmpDetailPart2 id="empdetailpart2" columnLayout="1"/>-->
-				<!--				<employment:BlockEmpDetailPart3 id="empdetailpart3" columnLayout="1"/>-->
-				<!--			</moreBlocks>-->
-				<!--		</ObjectPageSubSection>-->
-				<!--		<ObjectPageSubSection id="employmentSectionSS3" title="Job Relationship" mode="Collapsed" importance="Low">-->
-				<!--			<blocks>-->
-				<!--				<employment:EmploymentBlockJob id="employmentblockjob" showSubSectionMore="true">-->
-				<!--					<employment:mappings>-->
-				<!--						<ModelMapping externalModelName="ObjectPageModel" internalModelName="emp1" externalPath="/Employee/0"/>-->
-				<!--						<ModelMapping externalModelName="ObjectPageModel" internalModelName="emp2" externalPath="/Employee/1"/>-->
-				<!--						<ModelMapping externalModelName="ObjectPageModel" internalModelName="emp3" externalPath="/Employee/2"/>-->
-				<!--						<ModelMapping externalModelName="ObjectPageModel" internalModelName="emp4" externalPath="/Employee/3"/>-->
-				<!--						<ModelMapping externalModelName="ObjectPageModel" internalModelName="emp5" externalPath="/Employee/4"/>-->
-				<!--						<ModelMapping externalModelName="ObjectPageModel" internalModelName="emp6" externalPath="/Employee/5"/>-->
-				<!--					</employment:mappings>-->
-				<!--				</employment:EmploymentBlockJob>-->
-				<!--			</blocks>-->
-				<!--		</ObjectPageSubSection>-->
-				<!--	</subSections>-->
-				<!--</ObjectPageSection>-->
-			</sections>
-		</ObjectPageLayout>
-		<!--	</m:content>-->
-		<!--</m:Page>-->
-		<!--</m:pages>-->
-	</m:App>
+	displayBlock="true" xmlns:uxap="sap.uxap" xmlns:layout="sap.ui.layout" xmlns="sap.m" xmlns:f="sap.f" xmlns:l="sap.ui.layout"
+	xmlns:w="sap.ui.integration.widgets">
+	<ObjectHeader icon="./rg.jpg" iconDensityAware="true" iconAlt="Rishabh Gour" responsive="true" title="Rishabh Gour" intro="SAP Consultant"
+		imageShape="Circle">
+		<attributes>
+			<ObjectAttribute title="Email" text="rishabhgour62@gmail.com"/>
+			<ObjectAttribute title="Phone" text="+91 7773025552"/>
+		</attributes>
+	</ObjectHeader>
+	<FlexBox wrap="Wrap" class="sapUiMediumMargin">
+		<w:Card manifest="../cards/timeline.json" width="auto" height="auto"/>
+	</FlexBox>
 </mvc:View>
