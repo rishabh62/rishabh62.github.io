@@ -1,14 +1,19 @@
 <mvc:View controllerName="ui5.resume.controller.Resume" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
-	displayBlock="true" xmlns:uxap="sap.uxap" xmlns:layout="sap.ui.layout" xmlns="sap.m" xmlns:f="sap.f" xmlns:l="sap.ui.layout"
+	xmlns:uxap="sap.uxap" xmlns:layout="sap.ui.layout" xmlns="sap.m" xmlns:f="sap.f" xmlns:l="sap.ui.layout"
 	xmlns:w="sap.ui.integration.widgets">
-	<ObjectHeader icon="./rg.jpg" iconDensityAware="true" iconAlt="Rishabh Gour" responsive="true" title="Rishabh Gour" intro="SAP Consultant"
-		imageShape="Circle">
-		<attributes>
-			<ObjectAttribute title="Email" text="rishabhgour62@gmail.com"/>
-			<ObjectAttribute title="Phone" text="+91 7773025552"/>
-		</attributes>
-	</ObjectHeader>
-	<FlexBox wrap="Wrap" class="sapUiMediumMargin">
-		<w:Card manifest="../cards/timeline.json" width="auto" height="auto"/>
-	</FlexBox>
+	<App>
+		<pages>
+			<Page title="Resume">
+				<ObjectHeader icon="./rg.jpg" iconAlt="Rishabh Gour" responsive="true" title="Rishabh Gour" intro="SAP Consultant" imageShape="Circle">
+					<attributes>
+						<ObjectAttribute title="Email" text="rishabhgour62@gmail.com"/>
+						<ObjectAttribute title="Phone" text="+91 7773025552"/>
+					</attributes>
+				</ObjectHeader>
+				<FlexBox wrap="Wrap" class="sapUiMediumMargin">
+					<w:Card manifest="../cards/timeline.json" width="auto" height="auto"/>
+				</FlexBox>
+			</Page>
+		</pages>
+	</App>
 </mvc:View>
