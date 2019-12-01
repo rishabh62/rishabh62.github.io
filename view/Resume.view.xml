@@ -34,8 +34,8 @@
 					</f:header>
 					<f:content>
 						<FlexBox wrap="Wrap" justifyContent="SpaceAround">
-							<w:Card class="sapUiMediumMargin" manifest="../cards/education/education.json" width="auto" height="auto"/>
-							<w:Card class="sapUiMediumMargin" manifest="../cards/experience/experience.json" width="auto" height="auto"/>
+							<w:Card class="sapUiMediumMargin" manifest="../cards/education/education.json" width="300px" height="auto"/>
+							<w:Card class="sapUiMediumMargin" manifest="../cards/experience/experience.json" width="300px" height="auto"/>
 						</FlexBox>
 					</f:content>
 					<!-- DynamicPage Footer -->
