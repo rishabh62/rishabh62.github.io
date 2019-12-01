@@ -1,0 +1,42 @@
+{
+	"_version": "1.15.0",
+	"sap.app": {
+		"id": "experience.card",
+		"type": "card"
+	},
+	"sap.card": {
+		"type": "Timeline",
+		"header": {
+			"title": "Work Experience"
+		},
+		"content": {
+			"data": {
+				"json": [{
+					"Title": "SAP Labs, Bangalore",
+					"Description": "Developer Associate",
+					"Icon": "sap-icon://sap-logo-shape",
+					"Time": "Jul 2016 - Sep 2018, 2 yrs 3 mos"
+				}, {
+					"Title": "SICA S.S School, Indore",
+					"Description": "UI5 Consultant",
+					"Icon": "sap-icon://sap-ui5",
+					"Time": "Sep 2018 - Present, 1 yr 4 mos"
+				} ]
+			},
+			"item": {
+				"dateTime": {
+					"value": "{Time}"
+				},
+				"description": {
+					"value": "{Description}"
+				},
+				"title": {
+					"value": "{Title}"
+				},
+				"icon": {
+					"src": "{Icon}"
+				}
+			}
+		}
+	}
+}
