@@ -23,5 +23,11 @@
 
 	<body class="sapUiBody sapUiSizeCompact" id="content">
 	</body>
+	
+	<script>
+		if (navigator.serviceWorker) {
+			navigator.serviceWorker.register('./sw.js');
+		}
+	</script>
 
 </html>
