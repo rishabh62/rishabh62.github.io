@@ -7,7 +7,7 @@
 	"sap.card": {
 		"type": "Analytical",
 		"header": {
-			"title": "Skills",
+			"title": "Skill Set",
 			"subTitle": "",
 			"details": "{details}"
 		},
@@ -30,7 +30,7 @@
 				}
 			},
 			"title": {
-				"text": "Skills Strength",
+				"text": "Skills",
 				"visible": true,
 				"alignment": "Left"
 			},
