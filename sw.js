@@ -22,7 +22,7 @@ self.skipWaiting();
 
 self.addEventListener('fetch', function(event){
 
-    caches.open('northwind-cache-v1').then(function(cache){
+    caches.open('resume-cache-v1').then(function(cache){
 
         fetch(event.request).then(function(response){
             // if (event.request.url.indexOf("sapui5") >= 0) {
