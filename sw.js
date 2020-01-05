@@ -1,37 +1,43 @@
-// importScripts("./main.js")
-self.skipWaiting();
+var cdnBase = 'https://sapui5.hana.ondemand.com';
+var urlsToCache = [
+    '/controller/Resume.controller.js',
+    '/view/Resume.view.xml',
+    '/index.html',
+    '/index.js'
+    '/Component.js',
+    '/css/style.css',
+    '/manifest.json?sap-language=EN',
+    '/model/models.js',
+    '/cards/education/education.json',
+    '/cards/experience/experience.json',
+    '/cards/skills/skills.json',
+    '/rg.jpg',
+    '/rishabh.jpg',
+    `${cdnBase}/resources/sap-ui-core.js`,
+    `${cdnBase}/resources/sap/m/library-preload.js`,
+    `${cdnBase}/resources/sap/m/messagebundle_en_US.properties`,
+    `${cdnBase}/resources/sap/m/themes/sap_fiori_3/library.css`,
+    `${cdnBase}/resources/sap/ui/core/library-preload.js`,
+    `${cdnBase}/resources/sap/ui/core/messagebundle_en_US.properties`,
+    `${cdnBase}/resources/sap/ui/core/themes/sap_fiori_3/fonts/72-Regular.woff2`,
+    `${cdnBase}/resources/sap/ui/core/themes/sap_fiori_3/library.css`,
+    `${cdnBase}/resources/sap/ui/layout/library-preload.js`,
+    `${cdnBase}/resources/sap/ui/layout/messagebundle_en_US.properties`,
+    `${cdnBase}/resources/sap/ui/layout/themes/sap_fiori_3/library.css`
+];
 
+self.addEventListener("install", (event) => {
+    event.waitUntil(
+        caches.open('app-cache-v1').then((cache) => {
+            return cache.addAll(urlsToCache);
+            // cache.addAll(resourcesUrlsToCache);
+        })
+    );
+});
 
-// self.worker.initFromManifest().then(()=>{});
-// self.addEventListener("install", (event)=>{
+self.addEventListener('fetch', event => {
 
-// 	var urlsToCache = [
-// 		'webapp/',
-// 		'webapp/controller/Home.controller.js',
-// 		'webapp/view/Home.view.xml',
-// 		'webapp/index.html',
-// 		'webapp/Component.js'
-// 	];
-
-// 	event.waitUntil(
-// 		caches.open('northwind-cache-v1').then((cache)=>{
-// 			cache.addAll(urlsToCache);
-// 		})
-// 	);
-// });
-
-self.addEventListener('fetch', function(event){
-
-    caches.open('resume-cache-v1').then(function(cache){
-
-        fetch(event.request).then(function(response){
-            // if (event.request.url.indexOf("sapui5") >= 0) {
-                cache.put(event.request.url, response);
-            // }
-        });
-    });
-
-    event.respondWith(caches.match(event.request).then(function(response){
+    event.respondWith(caches.match(event.request).then((response) => {
         return response || fetch(event.request);
     })
     );
