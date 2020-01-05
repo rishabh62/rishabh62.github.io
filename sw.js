@@ -3,7 +3,7 @@ var urlsToCache = [
     '/controller/Resume.controller.js',
     '/view/Resume.view.xml',
     '/index.html',
-    '/index.js'
+    '/index.js',
     '/Component.js',
     '/css/style.css',
     '/manifest.json?sap-language=EN',
