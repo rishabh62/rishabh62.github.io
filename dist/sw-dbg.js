@@ -1,4 +1,5 @@
 var cdnBase = 'https://sapui5.hana.ondemand.com';
+
 var urlsToCache = [
 	'/controller/Resume.controller.js',
 	'/view/Resume.view.xml',
@@ -11,8 +12,8 @@ var urlsToCache = [
 	'/cards/education/education.json',
 	'/cards/experience/experience.json',
 	'/cards/skills/skills.json',
-	'/rg.jpg',
-	'/rishabh.jpg',
+	'/images/rg.jpg',
+	'/images/rishabh.jpg',
 	`${cdnBase}/resources/sap-ui-core.js`,
 	`${cdnBase}/resources/sap/m/library-preload.js`,
 	`${cdnBase}/resources/sap/m/messagebundle_en_US.properties`,
@@ -36,16 +37,22 @@ self.addEventListener("install", (event) => {
 });
 
 self.addEventListener('fetch', function (event) {
-	console.log(event.request.url);
+	// console.log(event.request.url);
 	event.respondWith(
 		caches.open('app-cache-v1').then(function (cache) {
 			return cache.match(event.request).then(function (response) {
+				
+				fetch(event.request).then(function (response) {
+					cache.put(event.request.url, response.clone());
+				});
+				
 				return response || fetch(event.request).then(function (response) {
-					// if (event.request.url.indexOf("sapui5") >= 0) {
-						cache.put(event.request.url, response.clone());
+					// if (event.request.url.indexOf("chrome") !== 0) {
+					cache.put(event.request.url, response.clone());
 					// }
 					return response;
 				});
+
 			});
 		})
 	);
