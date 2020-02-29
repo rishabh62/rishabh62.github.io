@@ -1,0 +1,47 @@
+{
+	"_version": "1.15.0",
+	"sap.app": {
+		"id": "education.card",
+		"type": "card"
+	},
+	"sap.card": {
+		"type": "Timeline",
+		"header": {
+			"title": "Education"
+		},
+		"content": {
+			"data": {
+				"json": [{
+					"Title": "SICA S.S School, Indore",
+					"Description": "10th CBSE, 9.4/10 CGPA",
+					"Icon": "sap-icon://education",
+					"Time": "2009 - 2010"
+				}, {
+					"Title": "SICA S.S School, Indore",
+					"Description": "12th CBSE, Science(PCM), 84.4%",
+					"Icon": "sap-icon://education",
+					"Time": "2011 - 2012"
+				}, {
+					"Title": "SGSITS, Indore",
+					"Description": "Bachelor of Engineering, 8/10 GPA",
+					"Icon": "sap-icon://study-leave",
+					"Time": "2012 - 2016"
+				} ]
+			},
+			"item": {
+				"dateTime": {
+					"value": "{Time}"
+				},
+				"description": {
+					"value": "{Description}"
+				},
+				"title": {
+					"value": "{Title}"
+				},
+				"icon": {
+					"src": "{Icon}"
+				}
+			}
+		}
+	}
+}

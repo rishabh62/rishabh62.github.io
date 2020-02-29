@@ -1,0 +1,49 @@
+<mvc:View controllerName="ui5.resume.controller.Resume" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:uxap="sap.uxap" xmlns:layout="sap.ui.layout" xmlns="sap.m" xmlns:f="sap.f" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core"
+	xmlns:w="sap.ui.integration.widgets">
+	<App>
+		<pages>
+			<Page title="Resume">
+				<f:DynamicPage id="dynamicPageId" headerExpanded="{/headerExpanded}" toggleHeaderOnTitleClick="false">
+					<f:header>
+						<f:DynamicPageHeader pinnable="false">
+							<FlexBox wrap="Wrap" fitContainer="true" justifyContent="SpaceBetween" alignContent="Center">
+								<FlexBox>
+									<f:Avatar class="sapUiSmallMarginEnd sapUiSmallMarginTop" src="images/rishabh.jpg" displaySize="XL"></f:Avatar>
+									<l:VerticalLayout class="sapUiSmallMarginEnd sapUiLargeMarginTop">
+										<Title titleStyle="H2" text="Rishabh Gour"/>
+										<Title titleStyle="H5" text="SAP consultant"/>
+									</l:VerticalLayout>
+								</FlexBox>
+								<FlexBox class="sapUiLargeMarginTop" direction="Column">
+									<HBox>
+										<core:Icon src="sap-icon://map"></core:Icon>
+										<Link class="sapUiTinyMarginBegin" text="Bangalore" target="_blank" href="https://www.google.com/maps/place/Bengaluru,+Karnataka/@12.9538477,77.3507442,10z"/>
+									</HBox>
+									<HBox class="sapUiTinyMarginTop">
+										<core:Icon src="sap-icon://call"></core:Icon>
+										<Link class="sapUiTinyMarginBegin" text="+91 7773025552"/>
+									</HBox>
+									<HBox class="sapUiTinyMarginTop">
+										<core:Icon src="sap-icon://email"></core:Icon>
+										<Link class="sapUiTinyMarginBegin" text="rishabhgour62@gmail.com"/>
+									</HBox>
+								</FlexBox>
+							</FlexBox>
+							<Text class="sapUiMediumMarginTop" text="{i18n>intro}"/>
+						</f:DynamicPageHeader>
+					</f:header>
+					<f:content>
+						<FlexBox wrap="Wrap" justifyContent="SpaceAround">
+							<w:Card class="sapUiMediumMargin" manifest="./cards/education/education.json" width="300px" height="auto"/>
+							<w:Card class="sapUiMediumMargin" manifest="./cards/experience/experience.json" width="300px" height="auto"/>
+							<w:Card class="sapUiMediumMargin" manifest="./cards/skills/skills.json" width="300px" height="auto"/>
+						</FlexBox>
+					</f:content>
+					<!-- DynamicPage Footer -->
+					<f:footer></f:footer>
+				</f:DynamicPage>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

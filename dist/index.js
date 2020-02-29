@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/ComponentContainer"],function(e){"use strict";new e("resumeComponentContainerId",{name:"ui5.resume",async:true}).placeAt("content")});
