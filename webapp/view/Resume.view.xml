@@ -9,7 +9,7 @@
 						<f:DynamicPageHeader pinnable="false">
 							<FlexBox wrap="Wrap" fitContainer="true" justifyContent="SpaceBetween" alignContent="Center">
 								<FlexBox>
-									<f:Avatar class="sapUiSmallMarginEnd sapUiSmallMarginTop" src="/rishabh.jpg" displaySize="XL"></f:Avatar>
+									<f:Avatar class="sapUiSmallMarginEnd sapUiSmallMarginTop" src="images/rishabh.jpg" displaySize="XL"></f:Avatar>
 									<l:VerticalLayout class="sapUiSmallMarginEnd sapUiLargeMarginTop">
 										<Title titleStyle="H2" text="Rishabh Gour"/>
 										<Title titleStyle="H5" text="SAP consultant"/>
