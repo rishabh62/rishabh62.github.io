@@ -1,1 +1,0 @@
-sap.ui.define(["sap/ui/core/mvc/Controller"],function(e,n){"use strict";return e.extend("ui5.resume.controller.Resume",{onInit:function(){}})});
